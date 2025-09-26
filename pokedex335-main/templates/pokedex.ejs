@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>PokeDex</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Pokedex</h1>
+    <a href="/ratingsForm">Ratings Form</a> |
+    <a href="/searchFavorites">Find Your Favorites</a>
+    <h3>Name or Number</h3>
+    <input type="text" id="search" placeholder="Search by Name or Number"> 
+    <button id="searchButton"><img src="/images/pokemon_search.png" alt="search" width="50" height="50"></button><br>
+    
+    <label for="sortBy">Sort By</label>
+    <select name="sort" id="sort">
+        <option value="lowerNumber">Lower Number (Ascending)</option>
+        <option value="higherNumber">Higher Number (Descending)</option>
+        <option value="A-Z">A-Z</option>
+        <option value="Z-A">Z-A</option>
+    </select>
+
+    <div id="display"></div>
+
+    
+    <script src="/pokedexDisplay.js"></script>
+</body>
+
+</html>

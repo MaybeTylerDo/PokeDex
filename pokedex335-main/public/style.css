@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background: linear-gradient(135deg, #f5f6fa 0%, #e0eafc 100%);
+    color: #222;
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #d32f2f;
+    font-size: 2.5rem;
+    margin-top: 32px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+h2, h3 {
+    color: #1976d2;
+    text-align: center;
+}
+
+form, fieldset, ol, #display {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(30, 60, 90, 0.08);
+    margin: 24px auto;
+    padding: 24px 32px;
+    max-width: 420px;
+}
+
+label, strong {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+input[type="text"], select {
+    font-size: 1rem;
+    padding: 8px 12px;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    margin: 8px 0;
+    width: 90%;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+button, input[type="submit"], input[type="reset"] {
+    background: #43a047;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 22px;
+    font-size: 1rem;
+    font-family: 'Roboto', Arial, sans-serif;
+    cursor: pointer;
+    margin: 8px 4px;
+    transition: background 0.2s;
+}
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+    background: #388e3c;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #e0e0e0;
+    margin: 32px 0;
+}
+
+a {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0 8px;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #d32f2f;
+}
+
+ol {
+    padding-left: 24px;
+    font-size: 1.1rem;
+}
+
+#display {
+    margin-top: 32px;
+    min-height: 120px;
+}
+
+select {
+    background: #f5f6fa;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-left: 8px;
+}
+
+body:has(h1:contains('Profile')) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}

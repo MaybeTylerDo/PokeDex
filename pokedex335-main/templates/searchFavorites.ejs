@@ -1,0 +1,30 @@
+<!-- searchFavorites.ejs -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Search Favorites</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Find Your Favorite Pokémon</h1>
+    <form action="/getUserFavorites" method="post">
+        <label for="searchName">Enter your name:</label>
+        <input type="text" id="searchName" name="searchName" placeholder = "Enter your name" required>
+        <button type="submit">Search</button>
+    </form>
+    <hr>
+    <% if (favorites) { %>
+        <h2>Favorites for <%= user %>:</h2>
+        <ol>
+            <% Object.keys(favorites).forEach(function(poke) { %>
+                <li><%= poke %> </li>
+            <% }); %>
+        </ol>
+    <% } else if (user) { %>
+        <p>No favorites found for <%= user %>.</p>
+    <% } %>
+    <hr>
+    <a href="/">POKEDEX</a>
+</body>
+</html>
